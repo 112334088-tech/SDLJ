@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+
+    <!-- Username -->
+    <div class="input-group">
+        <label for="username">Username</label>
+        <div class="input-container">
+            <input type="text" id="username" placeholder="Enter username" required>
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+
+
+    <!-- Password -->
+    <div class="input-group">
+        <label for="password">Password</label>
+        <div class="input-container">
+            <input type="password" id="password" placeholder="Enter password" required>
+            <i class="fa fa-lock"></i>
+        </div>
+    </div>
+
+
+    <!-- Remember Me & Forgot Password -->
+    <div class="options">
+        <label class="remember">
+            <input type="checkbox" id="rememberMe">
+            Remember me
+        </label>
+        <a href="#" class="forgot" onclick="forgotPassword()">Forgot password?</a>
+    </div>
+
+    <!-- Login Button -->
+    <button onclick="login()">Login</button>
+
+    <!-- Error Message -->
+    <p class="error" id="errorMsg"></p>
+
+    <!-- Register Link -->
+    <p class="register">
+        Don’t have an account?
+        <a href="register.html">Register</a>
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
