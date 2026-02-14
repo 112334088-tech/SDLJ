@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="stylereg.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Create Account</h2>
+
+    <div class="input-group">
+        <input type="text" id="regUsername" required>
+        <label>Username</label>
+    </div>
+
+    <div class="input-group">
+        <input type="email" id="regEmail" required>
+        <label>Email</label>
+    </div>
+
+    <div class="input-group">
+        <input type="mobile" id="regmobile" required>
+        <label>Mobile no</label>
+    </div>
+    
+    <div class="input-group">
+        <input type="password" id="regPassword" required>
+        <label>Password</label>
+    </div>
+
+    <div class="input-group">
+        <input type="password" id="regConfirmPassword" required>
+        <label>Confirm Password</label>
+    </div>
+
+    <button onclick="register()">Register</button>
+
+    <p class="error" id="regError"></p>
+    <p class="success" id="regSuccess"></p>
+
+    <p class="register">
+        Already have an account?
+        <a href="index.html">Login</a>
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
